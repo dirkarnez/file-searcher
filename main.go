@@ -16,9 +16,9 @@ var (
 
 func main() {
 	flag.StringVar(&rootDirectory, "rootDirectory", "", "Root directory to find")
-	flag.StringVar(&fileName, "fileName", "", "File name to find, regex pattern supported")
+	flag.StringVar(&fileName, "fileName", "", "File name to find, regex pattern eg. \".*\.cmake\" supported")
 	flag.Parse()
-
+	
 	if len(fileName) < 1 {
 		log.Fatal("No --fileName is given")
 	}
