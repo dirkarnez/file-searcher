@@ -37,7 +37,7 @@ func main() {
     }
 }
 
-func stringMatch(patternTolookFor, content) bool {
+func stringMatch(patternTolookFor string, content string) bool {
 	match, _ := regexp.MatchString(patternTolookFor, content)
 	return match
 }
